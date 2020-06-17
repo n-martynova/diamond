@@ -6,10 +6,8 @@
         </div>
 
         <div class="main">
-            <transition name="fade" mode="out-in">
-                <landing v-if="current === 'landing'" @codeSent="onCodeSent($event)"/>
-                <match3 v-else :token="token" />
-            </transition>
+                <landing v-show="current === 'landing'" @codeSent="onCodeSent($event)"/>
+                <match3 v-show="current === 'match3'" :token="token" />
         </div>
 
         <b-modal id="faq-modal" centered scrollable hide-header hide-footer no-fade>
