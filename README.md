@@ -1,1 +1,1 @@
-# mks-match3
+https://n-martynova.github.io/diamond/
