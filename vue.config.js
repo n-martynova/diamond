@@ -8,5 +8,5 @@ module.exports = {
                 args.compilerOptions.whitespace = 'preserve'
             })
     },
-    // publicPath: '.',
+    publicPath: process.env.NODE_ENV === 'production' ? '/diamond/' : '/'
 }
