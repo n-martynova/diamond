@@ -46,6 +46,8 @@
                     <p>Зарабатывайте очки, собирая как можно больше одинаковых стрелочек подряд</p>
                     <p>Среди набравших 10&nbsp;000 очков мы разыграем 10 паков: сумка&nbsp;+ носки&nbsp;+ кардхолдер</p>
                     <p>Итоги розыгрыша объявим 29 февраля</p>
+
+                    <div class="play-btn" @click="onCodeSent($event)">Играть</div>
 <!-- 
                     <div class="stampede-placeholder">
                         <stampede @codeSent="onCodeSent($event)" :fixedutm="utm" />

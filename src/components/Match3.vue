@@ -118,15 +118,15 @@ export default {
                 this.maxReached = true
                 this.popupVisible = true
 
-                this.$http({
-                    url: `https://rocketbank.ru/api/marketing/orders/diamond/${this.token}/complete`,
-                    method: 'POST'
-                }).then(res => {
-                    console.log('success')
-                })
-                .catch(error => {
-                    console.log(error)
-                })
+                // this.$http({
+                //     url: `https://rocketbank.ru/api/marketing/orders/diamond/${this.token}/complete`,
+                //     method: 'POST'
+                // }).then(res => {
+                //     console.log('success')
+                // })
+                // .catch(error => {
+                //     console.log(error)
+                // })
             }
 
             this.interval = window.setInterval(function() {
