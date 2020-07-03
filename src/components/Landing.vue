@@ -48,10 +48,6 @@
                     <p>Итоги розыгрыша объявим 29 февраля</p>
 
                     <div class="play-btn" @click="onCodeSent($event)">Играть</div>
-<!-- 
-                    <div class="stampede-placeholder">
-                        <stampede @codeSent="onCodeSent($event)" :fixedutm="utm" />
-                    </div> -->
                 </div>
             </div>
 

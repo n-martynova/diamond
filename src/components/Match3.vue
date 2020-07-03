@@ -91,11 +91,11 @@ export default {
             return this.score / 10000 * 100
         },
         inviteUrl() {
-            return window.location.origin
+            return 'https://n-martynova.github.io/diamond/'
         },
 
         fbLink() {
-            return `https://www.facebook.com/sharer.php?u=${this.inviteUrl}&hashtag=%23рокетбанк_2х2&quote=Мой результат — ${this.score} очков!`
+            return `https://www.facebook.com/sharer.php?u=${this.inviteUrl}&hashtag=%23&quote=Мой результат — ${this.score} очков!`
         },
 
         vkLink() {
@@ -104,7 +104,7 @@ export default {
 
         twitterLink() {
             return (
-                `https://twitter.com/intent/tweet?hashtags=рокетбанк_2х2,рокетбанк,2х2&&related=rocketbank` +
+                `https://twitter.com/intent/tweet?hashtags=рокетбанк&&related=rocketbank` +
                 `&text=Мой результат — ${this.score} очков!&tw_p=tweetbutton&url=${this.inviteUrl}&via=rocketbank`
             )
         },
@@ -118,15 +118,6 @@ export default {
                 this.maxReached = true
                 this.popupVisible = true
 
-                // this.$http({
-                //     url: `https://rocketbank.ru/api/marketing/orders/diamond/${this.token}/complete`,
-                //     method: 'POST'
-                // }).then(res => {
-                //     console.log('success')
-                // })
-                // .catch(error => {
-                //     console.log(error)
-                // })
             }
 
             this.interval = window.setInterval(function() {
